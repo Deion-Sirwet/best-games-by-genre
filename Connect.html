@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Best Games By Genre</title>
+        <link rel="stylesheet" href="style.css">
+    </head>	
+    <body>
+        <header>
+			<h1>Best Games By Genre</h1>
+			<img class="headerpic" src="Home Header Image.jpeg" alt="Header Image">
+		</header>
+		<main>
+			<div class="content">
+				<h2>Connect With Us: Have Your Voice Heard</h2>
+				<p>
+				Feel free to submit your recommendations for games that should be on the list! After all, that's what this site is all about. We want the best games decided by the PLAYERS!
+				</p>
+				<form action="SubmissionMessage.html" method="post">
+					<label for="genre">Genre of Game:</label>
+					<br>
+					<input type="text" id="genre" list="genreList" name="genre" required>
+					<datalist id="genreList">
+						<option value="FPS" />
+						<option value="RPG" />
+						<option value="Racing" />
+						<option value="Fighting" />
+						<option value="Puzzle" />
+					</datalist>
+					<br>
+					<label for="game">Name of Game:</label>
+					<br>
+					<input type="text" id="game" name="game" required>
+					<br>
+					<label for="gameRating">Rating of the Game (0% - 100% Positive):</label>
+					<br>
+					<input type="text" inputmode="numeric" id="rating" name="rating" pattern="^\d{3,4}$" required>
+					<br>
+					<label for="message">Reason the Game Should Make the List:</label>
+					<br>
+					<textarea id="message" name="message" rows="6" cols="50" required></textarea>
+					<br>				
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<nav class="genres">		
+				<h2>Genres</h2>
+				<a href="index.html">Home</a>
+				<a href="FPS.html">FPS</a>
+				<a href="RPG.html">RPG</a>
+				<a href="Racing.html">Racing</a>
+				<a href="Fighting.html">Fighting</a>
+				<a href="Puzzle.html">Puzzle</a>
+				<a href="Connect.html">Connect</a
+			</nav>
+		</main>
+	
+		<footer>&copy; 2024, All rights reserved.</footer>
+    </body>
+	
+</html>
